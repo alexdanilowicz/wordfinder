@@ -6,7 +6,7 @@
 python wordfinder.py
 ```
 
-This will create an `outfile.csv` in your working directory of the discovered words. 
+This will create an `outfile.csv` in your working directory of the discovered words.
 
 #### Optional Directory Argument
 
@@ -34,7 +34,7 @@ brew install ripgrep
 Note: recursively searching your current working directory is the default mode of operation for ripgrep.
 
 If you see an error message from ripgrep saying that it didn't search any files, then re-run ripgrep with the --debug flag. One likely cause of this is that you have a * rule in a $HOME/.gitignore file.
- 
+
 #### Ripgrep References  
 
 [https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md)
