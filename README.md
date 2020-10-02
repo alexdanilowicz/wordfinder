@@ -1,5 +1,7 @@
 # WordFinder 🔍
 
+black list
+
 ## Usage
 
 ```

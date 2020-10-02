@@ -10,8 +10,10 @@ VERBOSE = False
 PRIORITY_BY_WORDS = {
 	"blacklist": 1,
 	"black_list": 1,
+	"black list": 1,
 	"white_list": 2,
 	"whitelist": 2,
+	"white list": 2,
 	"slave": 3,
 	"master": 4,
 	"dummy": 5,
@@ -52,12 +54,11 @@ def get_arg_directory():
 
 def process_grep_cmd(writer):
 	cmd_sequence = CMD.split()
-	cmd_sequence.append("placeholder")
+	cmd_sequence.append("placeholder") # not the cleanest solution, but we need arg_dir to be last.
 	arg_dir = get_arg_directory()
 	cmd_sequence.append(arg_dir)
-	arg_dir = get_arg_directory()
 	for word in PRIORITY_BY_WORDS.keys():
-		cmd_sequence[-2] = word
+		cmd_sequence[-2] = word # replace the old word, this is O(1), I think
 		process = subprocess.Popen(cmd_sequence, stdout=subprocess.PIPE, universal_newlines=True)
 
 		#  wait for the output until the process has actually completed.
