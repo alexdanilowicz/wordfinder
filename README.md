@@ -1,4 +1,4 @@
-# WordFinder
+# WordFinder 🔍
 
 ## Usage
 
@@ -17,6 +17,13 @@ For example:
 ```
 python wordfinder.py ~/code
 ```
+
+## Sample CSV output
+
+| Root_Directory | File_Path                    | Line_Number | Snippet                        | Priority | Searched_Word | File_Extension |
+|----------------|------------------------------|-------------|--------------------------------|----------|---------------|----------------|
+| codebase       | ~/codebase/components/foo.js | 3           | myString = "I bought an apple" | 1        | apple         | .js            |
+| codebase2      | ~/codebase2/script.rb        | 104         | DOG_CONSTANT: "woof"           | 2        | dog           | .rb            |
 
 ## Dependencies
 
@@ -41,4 +48,4 @@ If you see an error message from ripgrep saying that it didn't search any files,
 
 ## Future work
 
-Please make PRs! And add to the issues section.
+Please make PRs! And checkout the issues section.
