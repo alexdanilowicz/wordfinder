@@ -117,4 +117,4 @@ def get_root_directory(file_path, search_path):
 if __name__ == "__main__":
 	start = time.time()
 	main()
-	print("Finished in %s seconds", round(time.time() - start, 2))
+	print("Finished in %s seconds" % str(round(time.time() - start, 2)))
