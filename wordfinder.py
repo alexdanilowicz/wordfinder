@@ -15,7 +15,6 @@ PRIORITY_BY_WORDS = {
 	"whitelist": 2,
 	"white list": 2,
 	"slave": 3,
-	"master": 4,
 	"dummy": 5,
 	"grandfathered": 6
 }
